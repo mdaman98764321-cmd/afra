@@ -18,7 +18,7 @@ jobs:
       - name: Build web app
         working-directory: project
         run: |
-          npm install --no-audit --no-fund
+          npm install --legacy-peer-deps --no-audit --no-fund
           npx vite build
       - name: Copy web app into Android project
         run: |
